@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this, LinearLayoutManager.VERTICAL, false));
-        final RecyclerViewForNotes recyclerViewForNotes = new RecyclerViewForNotes(this);
+        final RecyclerViewForNotes recyclerViewForNotes = new RecyclerViewForNotes();
         recyclerView.setAdapter(recyclerViewForNotes);
 
         viewModel = ViewModelProviders.of(this).get(NoteViewModel.class);
@@ -44,7 +44,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //As initially recycler view sets null data when data
                 // fetched or after change in data then after that data
                 // is set in recyclerview as we call dataSetChanged
-                recyclerViewForNotes.setNoteList(notes);
+
+                /* To set this without ListAdapter Extend this classs
+                recyclerViewForNotes.setNoteList(notes);*/
+
+                //This is the method in ListAdapter class which submits the list which is changed or initial one
+                recyclerViewForNotes.submitList(notes);
             }
         });
 
