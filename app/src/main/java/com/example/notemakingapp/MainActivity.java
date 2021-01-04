@@ -22,6 +22,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     NoteViewModel viewModel;
+    private static String nameAdd="Add";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         Intent i = new Intent(MainActivity.this, AddActivity.class);
+        i.putExtra("nameAdd",nameAdd);
         startActivity(i);
     }
 }
