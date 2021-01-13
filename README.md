@@ -8,4 +8,4 @@ More than notes, our app is where you can store everything from personal moments
 App provides a good UI which help user to easily insert ,delete and edit notes in simple words it is going to make users life more simple by just picking their phone and typing the idea which they want to remembered forever in their phone and when they wanted to delete that they can easily do so. .
 
 
-                 ![NoteMakingApp](https://github.com/ankit6271/NoteMakingApp/blob/master/NoteMakingApp%20(1).gif)
+   ![NoteMakingApp](https://github.com/ankit6271/NoteMakingApp/blob/master/NoteMakingApp%20(1).gif)
